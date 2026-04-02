@@ -1,5 +1,6 @@
-streamlit==1.24.0
+streamlit==1.33.0
 pandas
 numpy
-scikit-learn==1.2.2
+scikit-learn==1.4.2
 joblib
+pillow>=10.0.0
