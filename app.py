@@ -8,7 +8,7 @@ from prediction import prediction
 st.set_page_config(page_title="Student Dropout Prediction", layout="centered")
 
 st.title("🎓 Student Dropout Prediction")
-st.write("Predict apakah mahasiswa akan Dropout, Enrolled, atau Graduate")
+st.write("Predict apakah mahasiswa akan Dropout atau Graduate")
 
 # input form
 

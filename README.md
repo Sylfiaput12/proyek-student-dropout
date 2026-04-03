@@ -94,7 +94,7 @@ Setelah aplikasi dijalankan, pengguna dapat memasukkan data mahasiswa dan sistem
 - Enrolled
 - Graduate
 
-Link Streamlit Cloud : https://student-dropout-prediction-ahmcxhv4zae3aaorazmc3d.streamlit.app/
+Link Streamlit Cloud : https://proyek-student-dropout-mnchaod33w6hqgg4pyp8il.streamlit.app/
 
 ## Conclusion
 
