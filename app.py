@@ -93,8 +93,6 @@ if st.button("Predict"):
 
     if result == "Dropout":
         st.error("⚠️ Dropout Risk")
-    elif result == "Enrolled":
-        st.warning("📚 Still Enrolled")
     else:
         st.success("🎓 Graduate")
 
@@ -102,5 +100,4 @@ if st.button("Predict"):
     st.subheader("Prediction Probability:")
 
     st.write(f"Dropout: {proba[0]*100:.2f}%")
-    st.write(f"Enrolled: {proba[1]*100:.2f}%")
-    st.write(f"Graduate: {proba[2]*100:.2f}%")
+    st.write(f"Graduate: {proba[1]*100:.2f}%")

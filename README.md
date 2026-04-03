@@ -35,7 +35,7 @@ Sumber data: https://github.com/dicodingacademy/dicoding_dataset/tree/main/stude
 Setup environment:
 
 ```
-conda create - name final_student python=3.9
+conda create -name final_student python=3.9
 conda activate final_student
 
 pip install pandas numpy scikit-learn matplotlib seaborn streamlit joblib
@@ -94,21 +94,17 @@ Setelah aplikasi dijalankan, pengguna dapat memasukkan data mahasiswa dan sistem
 - Enrolled
 - Graduate
 
+Link Streamlit Cloud : https://student-dropout-prediction-ahmcxhv4zae3aaorazmc3d.streamlit.app/
+
 ## Conclusion
 
-Berdasarkan hasil analisis dan pemodelan, faktor yang paling berpengaruh terhadap status mahasiswa adalah faktor akademik dan finansial, seperti admission grade, status pembayaran tuition fees, serta kondisi keuangan (debtor).
+Berdasarkan hasil analisis data (Exploratory Data Analysis) dan visualisasi pada dashboard, dapat disimpulkan bahwa faktor utama yang memengaruhi terjadinya dropout pada mahasiswa berkaitan dengan aspek akademik dan finansial. Mahasiswa dengan nilai admission grade yang lebih rendah cenderung memiliki risiko dropout yang lebih tinggi. Selain itu, status pembayaran biaya kuliah (tuition fees) juga menjadi faktor penting, di mana mahasiswa yang tidak membayar tepat waktu memiliki kemungkinan dropout yang lebih besar. Faktor kondisi keuangan, seperti status debtor, serta kepemilikan beasiswa juga turut memengaruhi keberlangsungan studi mahasiswa.
 
-Model yang dibangun menggunakan algoritma Random Forest menghasilkan akurasi sebesar 55%, yang menunjukkan performa masih dalam kategori moderat. Model mampu mengklasifikasikan kelas Dropout dan Graduate dengan cukup baik, namun masih mengalami kesulitan dalam mengidentifikasi kelas Enrolled.
+Selain itu, terdapat perbedaan risiko dropout berdasarkan karakteristik demografis seperti usia dan gender, serta variasi tingkat dropout pada masing-masing program studi. Hal ini menunjukkan bahwa risiko dropout tidak hanya dipengaruhi oleh satu faktor, melainkan kombinasi dari berbagai aspek akademik, finansial, dan karakteristik individu mahasiswa.
 
-Secara keseluruhan, proyek ini berhasil memberikan insight yang berguna bagi institusi dalam memahami faktor risiko dropout serta menyediakan sistem prediksi awal yang dapat digunakan sebagai alat bantu pengambilan keputusan.
+Dari sisi pemodelan, model machine learning yang dibangun menggunakan algoritma Random Forest telah disesuaikan menjadi klasifikasi biner (Dropout dan Graduate) sesuai dengan tujuan bisnis. Model menghasilkan performa yang cukup baik dengan nilai akurasi sebesar 74.5%, serta nilai F1-score sebesar 0.79 untuk kelas Graduate dan 0.68 untuk kelas Dropout. Nilai recall pada kelas Dropout sebesar 0.73 menunjukkan bahwa model cukup efektif dalam mendeteksi mahasiswa yang berpotensi dropout.
 
-Beberapa insight penting yang diperoleh dari analisis antara lain:
-
-1. Mahasiswa yang tidak membayar biaya kuliah tepat waktu memiliki risiko dropout yang jauh lebih tinggi.
-2. Mahasiswa tanpa beasiswa cenderung memiliki tingkat dropout yang lebih tinggi dibandingkan penerima beasiswa.
-3. Performa akademik pada semester pertama merupakan indikator kuat dalam menentukan kemungkinan dropout.
-4. Terdapat perbedaan risiko dropout berdasarkan gender dan usia mahasiswa.
-5. Beberapa program studi memiliki tingkat dropout yang lebih tinggi dibandingkan yang lain.
+Dengan performa tersebut, model sudah dapat digunakan sebagai sistem peringatan dini (early warning system) untuk membantu institusi dalam mengidentifikasi mahasiswa yang berisiko dropout. Selain itu, fitur-fitur seperti admission grade, status pembayaran tuition, dan kondisi finansial menjadi faktor yang paling berpengaruh dalam menentukan prediksi model, sehingga dapat dijadikan fokus utama dalam pengambilan keputusan.
 
 ### Rekomendasi Action Items
 
